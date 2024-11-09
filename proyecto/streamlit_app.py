@@ -72,7 +72,7 @@ st.markdown("---")
 st.markdown("### Comparativo de Producción por Año")
 
 # Calcular los promedios anuales de los datos reales
-datos_por_anio = datos_completos.resample('Y').mean()
+datos_por_anio = datos_completos.resample('YE').mean()
 
 # Crear los datos de pronóstico para los años 2019 y 2020
 pronosticos = pd.DataFrame({
